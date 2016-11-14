@@ -5,7 +5,7 @@
  */
 public class InsertionSort {
 
-    public static int[] insertSort(int[] arr) {
+    public int[] insertSort(int[] arr) {
         int key,temp,i,j;
         for(i=1;i<arr.length;i++){
             key=arr[i];
@@ -16,7 +16,6 @@ public class InsertionSort {
                 arr[j+1]=temp;
                 j--;
             }
-
         }
         return arr;
     }
